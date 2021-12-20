@@ -9,6 +9,37 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
   
     <div class="container">
 
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+</script>
         <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
@@ -17,7 +48,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                     <div class="col-lg-12  pt-5 pb-5">
                         <div class="p-5  pt-5 pb-5">
                             <div class="text-center  pt-5 pb-5">
-                                <h1 class="h4 text-gray-900 mb-4">Editar oficinas <a href="new-office.php" >Crear nueva oficina</a></h1>
+                            <div class="d-flex justify-content-between">
+                            <h1 class="h4 text-gray-900 mb-4">Editar oficinas </h1><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Crear nueva oficina</button>
+                            </div>
+                                
                             </div>
                                 <form action="new-office-procesar.php" method="post">
                                  <?php 
