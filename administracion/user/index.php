@@ -25,8 +25,134 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             <divs class="card shadow mb-4">
                 <div class="card-header py-3">
                     <div class="d-flex justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">Registro de visitas</h6> 
-                          <h6><button class="btn btn-primary" onclick="modaladd()">Añadir visita</button></h6>
+                      <h6 class="m-0 font-weight-bold text-primary col-sm- 12 col-md-6">Registro de visitas</h6> 
+                      <button type="button" class="btn btn-primary btn-lg btn-block col-sm- 12 col-md-6" data-toggle="modal" data-target="#exampleModal">
+                        Registrar visita
+                        </button>
+                        <!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registrar visita</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-8">
+        <label for="validationCustom01" class="form-label">Número de DNI</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="DNI del visitante" required>
+     
+      </div>
+      <div class="col-4 pt-4">
+        <button class="btn btn-primary" type="submit">Buscar persona</button>
+      </div>
+    </form>
+    <div class="mt-5"></div>
+    <div class="mb-4"></div>
+<!-- Formulario para registrar las visitas -->
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-6">
+      <label for="validationCustom01" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre completo del visitante" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom01" class="form-label">Número de documento</label>
+      <input type="number" class="form-control" id="validationCustom01" placeholder="DNI del visitante" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mt-4">
+      <label for="validationCustom02" class="form-label">Motivo</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Motivo de la visita" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+
+    <div class="col-md-6 mt-4">
+      <label for="validationCustom02" class="form-label">Oficina</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Oficina a la que esta visitando" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mt-4">
+      <label for="validationCustomUsername" class="form-label">Empleado</label>
+      <div class="input-group"> 
+        <input type="text" class="form-control" placeholder="Nombre del empleado municipal"  required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mt-4">
+      <label for="validationCustom03" class="form-label">Cargo</label>
+      <select class="form-select form-control" id="validationCustom04" required>
+        <option selected disabled value="">Selecciona</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-3 mt-4">
+      <label for="validationCustomUsername" class="form-label">Hora de ingreso</label>
+        <div class="input-group"> 
+          <input type="time" class="form-control" placeholder="Hora de visita"  required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mt-4">
+      <label for="validationCustomUsername" class="form-label">Hora de salida</label>
+        <div class="input-group"> 
+          <input type="time" class="form-control" placeholder="Hora de salida"  required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mt-">
+      <label for="validationCustomUsername" class="form-label">Fecha de visita</label>
+        <div class="input-group"> 
+          <input type="date" class="form-control" placeholder="Fecha de visita"  required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+    </div>
+    <div class="col-12 mt-4">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Acepto los terminos y condiciones
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    
+  </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Registrar visita</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                     </div>
                 </div>
                 <div class="card-body">
@@ -89,29 +215,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
 </div>
 <!-- /.container-fluid -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-     function modaladd() {
-          alert('hola');
-     }
-</script>
+
 </div>
 <!-- End of Main Content -->
 <?php include_once '../includes/footer.php' ?>
