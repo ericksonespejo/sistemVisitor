@@ -106,7 +106,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                         </tr>
                                     </tfoot>
                                     <tbody id="tbody">
-                                        
+                                     <?php include_once 'visitors.list.php' ?>
                                     </tbody>
                                 </table>
                             </div>

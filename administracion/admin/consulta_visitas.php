@@ -8,6 +8,6 @@
         $arr[]=$row;
     } 
 
-    echo json_encode($arr);
+    $lista=json_encode($arr);
     $conn->close();
 ?>
