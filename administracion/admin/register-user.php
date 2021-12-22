@@ -14,9 +14,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 <!-- Nested Row within Card Body -->
                 <div class="row">
                     <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                    <div class="col-lg-7  pt-5 pb-5">
-                        <div class="p-5  pt-5 pb-5">
-                            <div class="text-center">
+                        <div class="col-lg-7  pt-5 pb-5">
+                            <div class="p-5  pt-5 pb-5">
+                              <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Crear nuevo usuario</h1>
                             </div>
                             
@@ -51,7 +51,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                     </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 position-relative mt-5">
+                                <div class="col-md-6 position-relative mt-5">
                                     <label for="validationTooltip04" class="form-label">Rol de usuario</label>
                                     <select class="form-control form-select form-select-lg mb-3" id="validationTooltip04" name="rolUsuario" required>
                                     <option selected disabled value="">Seleccionar...</option>
@@ -73,7 +73,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             </div>
         </div>
 
-    </div>
     </div>
     <script>
         (function () {

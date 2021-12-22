@@ -90,16 +90,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                 </div>
                                 <div class="col-md-12 position-relative">
                                     <label for="validationTooltip01" class="form-label">Cargo</label>
+                                    <?php include_once '../../includes/config/claseConeccion.php;' ?>
                                     <select name="cargo" id="cargo" class="form-control" required>
                                         <option selected>Selecciona un cargo</option>
-                                        <option value="Alcalde">Alcalde</option>
-                                        <option value="Gerente">Gerente</option>
-                                        <option value="Jefe de Logistica">Jefe de Logistica</option>
-                                        <option value="Jefe de administración y finanzas">Jefe de administración y finanzas</option>
-                                        <option value="Jefe de planificación y presupuesto">Jefe de planificación y presupuesto</option>
-                                        <option value="Gerente de desarrollo social y servicios publicos">Gerente de desarrollo social y servicios publicos</option>
-                                        <option value="Gerente de Obras desarrollo urbano y rural">Gerente de Obras desarrollo urbano y rural</option>
+                                            <?php include_once 'listCargo.php'; ?>
                                     </select>
+                                    <?php ?>
                                     <div class="invalid-tooltip">
                                     Ingresa el cargo de la persona.
                                     </div>

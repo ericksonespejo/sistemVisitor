@@ -1,5 +1,5 @@
 <?php
-require_once 'claseConeccion.php';
+require_once '../../includes/config/claseConeccion.php';
 $objDB = new DataBase;
 $result = $objDB->Execute('SELECT * FROM visitante');
 while($visitante = $result->fetch_assoc()){

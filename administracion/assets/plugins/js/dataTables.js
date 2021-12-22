@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#visitas').DataTable({
+    $('#regVisitas').DataTable( {
         "scrollX": true,
         language: {
             processing: "Procesando...",
