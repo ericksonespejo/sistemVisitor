@@ -1,6 +1,6 @@
 <?php include ('includes/cabeceras/header.php');?>
 <div class="container mt-5">
-    <div class="card">
+    <div class="card"></div>
         <div class="card-body">
             <div class="row">
                 <div class="col-lg-12">
@@ -57,6 +57,5 @@
         </div>
     </div>
 </div>
-
 <?php include ('includes/cabeceras/footer.php');?>
 

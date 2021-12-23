@@ -10,7 +10,7 @@ if($id>0){
 }
 ?>
 
-  <form id="frmvisitante" class="form">
+  <form id="modalFrmEmployee" class="form">
     <input type="hidden" name="id" value="<?= $id ?>" />
     <label>
       Fecha:
