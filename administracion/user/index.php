@@ -218,7 +218,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
 </div>
 <!-- End of Main Content -->
-<?php include_once '../includes/footer.php' ?>
+<?php include_once '../includes/footer-user.php' ?>
 <?php 
 }else{
      header("Location: ../index.php");
