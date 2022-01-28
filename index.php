@@ -48,7 +48,7 @@
                             <td><?php echo $row['oficina'] ?></td>
                             <td><?php echo $row['hora_salida'] ?></td>
                         </tr>
-                        <?php } mysqli_free_result($resultadop);?>
+                        <?php } mysqli_free_result($respuesta);?>
                     </tbody>
                 </table>
                 
